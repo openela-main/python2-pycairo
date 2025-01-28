@@ -1,6 +1,6 @@
 Name:    python2-pycairo
 Version: 1.16.3
-Release: 6%{?dist}
+Release: 7%{?dist}
 Summary: Python bindings for the cairo library
 
 License: MPLv1.1 or LGPLv2
@@ -52,6 +52,9 @@ export RHEL_ALLOW_PYTHON2_FOR_BUILD=1
 %{_libdir}/pkgconfig/pycairo.pc
 
 %changelog
+* Thu Jan 09 2025 Josef Ridky <jridky@redhat.com> - 1.16.3-7
+- bump spec for NVR fix
+
 * Thu Aug 16 2018 Josef Ridky <jridky@redhat.com> - 1.16.3-6
 - Rename pycairo to python2-pycairo (RCM-39388)
 
